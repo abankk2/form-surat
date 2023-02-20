@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layanan Surat | MAN 2 Kota Cirebon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/76a945766d.js' crossorigin='anonymous'></script>
+    <style>
+        body {
+            background-color: #b8ffa3;
+        }
+
+        .for {
+            background-color: wheat;
+            border-radius: 1.5em;
+        }
+
+        .btn {
+            border-radius: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row justify-content-center my-3">
+        <a class="col-md-4 p-2 text-center" href="index.html">
+            <img src="https://elearning.man2kotacirebon.sch.id/__statics/upload/logo1658666639.png" class=""
+                width="100px" alt="abank">
+        </a>
+    </div>
+
+    <div class="container mb-5">
+        <div class="judul text-center my-3">
+            <h4>FORMULIR SURAT PENGANTAR SISWA MAN 2 KOTA CIREBON</h4>
+        </div>
+
+        <div class="alert alert-success alert-dismissible fade show my-alert d-none" role="alert">
+            <strong>Terimakasih!</strong> Pesan Anda Berhasil dikirm.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <h4 class="alert-heading">Catatan !!</h4>
+            <p>Jika Lebih dari 1 Orang Tuliskan di Form Tambahan</p>
+            <hr>
+            <p class="mb-0">1. #NAMA LENGKAP #KELAS #JABATAN</p>
+            <p class="mb-0">2. #NAMA LENGKAP #KELAS #JABATAN</p>
+            <p class="mb-0">2. dst.</p>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <div class="for shadow p-3 bg-white">
+            <form name="submit-to-google-sheet">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Nama Lengkap</label>
+                            <input type="text" name="nama" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Kelas</label>
+                            <select class="form-select" name="kelas" required>
+                                <option selected disabled> </option>
+                                <option value="X MIA 1">X MIA 1</option>
+                                <option value="X MIA 2">X MIA 2</option>
+                                <option value="X MIA 3">X MIA 3</option>
+                                <option value="X MIA 4">X MIA 4</option>
+                                <option value="X IIS 1">X IIS 1</option>
+                                <option value="X IIS 2">X IIS 2</option>
+                                <option value="X IIS 3">X IIS 3</option>
+                                <option value="X IIS 4">X IIS 4</option>
+                                <option value="X IIK">X IIK</option>
+                                <option value="XI MIA 1">XI MIA 1</option>
+                                <option value="XI MIA 2">XI MIA 2</option>
+                                <option value="XI MIA 3">XI MIA 3</option>
+                                <option value="XI MIA 4">XI MIA 4</option>
+                                <option value="XI IIS 1">XI IIS 1</option>
+                                <option value="XI IIS 2">XI IIS 2</option>
+                                <option value="XI IIS 3">XI IIS 3</option>
+                                <option value="XI IIS 4">XI IIS 4</option>
+                                <option value="XI IIK">XI IIK</option>
+                                <option value="XII MIA 1">XII MIA 1</option>
+                                <option value="XII MIA 2">XII MIA 2</option>
+                                <option value="XII MIA 3">XII MIA 3</option>
+                                <option value="XII MIA 4">XII MIA 4</option>
+                                <option value="XII IIS 1">XII IIS 1</option>
+                                <option value="XII IIS 2">XII IIS 2</option>
+                                <option value="XII IIS 3">XII IIS 3</option>
+                                <option value="XII IIS 4">XII IIS 4</option>
+                                <option value="XII IIK">XII IIK</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Jabatan</label>
+                            <input type="text" name="jabatan" class="form-control" required>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Nama Kegiatan</label>
+                            <textarea class="form-control" name="kegiatan" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Tempat Kegiatan</label>
+                            <textarea class="form-control" name="tempat" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Waktu Kegiatan</label>
+                            <textarea class="form-control"
+                                placeholder="Contoh : Selasa, 14 Februari 2023 | Pkl. 14.00 sd 16:00" rows="2"
+                                name="waktu"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="alert alert-warning" role="alert">
+                            <h4 class="alert-heading">Catatan !!</h4>
+                            <p>Jika Lebih dari 1 Orang Tuliskan di Form Tambahan</p>
+                            <hr>
+                            <p class="mb-0">1. #NAMA LENGKAP #KELAS #JABATAN</p>
+                            <p class="mb-0">2. #NAMA LENGKAP #KELAS #JABATAN</p>
+                            <p class="mb-0">2. dst.</p>
+
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tambahan</label>
+                            <textarea class="form-control" name="tambahan" rows="4" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 mt-2">
+                        <button class="btn btn-outline-success btn-kirim" type="submit">Kirim</button>
+
+                        <button class="btn btn-outline-success btn-loading d-none" type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                            Mengirim ...
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxNw0uiPSInGPVZR7J2I7iOCVj9Oo2sg_Xg6ZFirJSfI1qvd1FrI2Vaw052ncj6eq4QwQ/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            // Ketika Tombol Kirim di Klik
+            // Tampilkan Tombol Loading hilangkan Tombol Kirim 
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    // Tampilkan Tombol Kirim hilangkan Tombol Loding 
+                    btnLoading.classList.toggle('d-none');
+                    btnKirim.classList.toggle('d-none');
+                    // Tampilkan Alert
+                    myAlert.classList.toggle('d-none');
+                    // riset Form
+                    form.reset();
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
